@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="assets/img/favicon.ico" type="image/ico">
+<title>偏爱查询-信息泄漏查询</title>
+<meta name="keywords" content="信息泄漏,Q绑,微博查询,LOL查询,手机号查询">
+<meta name="description" content="信息泄漏查询是使用互联网接口进行信息泄漏查询的网站">
+<link rel="stylesheet" href="assets/layui/css/layui.css" media="all">
+<link rel="stylesheet" href="assets/css/style.css" media="all">
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/layui/layui.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/stepsv3.1.js"></script>
+<script src="assets/js/gonggao.js"></script>
+</head>
+<body layadmin-themealias="dark-blue" style="margin-top: 1em;">
+<div class="imgc"></div>
+<div id="divLoading">
+<div class="layui-fluid">
+<div class="a layui-anim layui-anim-fadein">
+<div class="layui-row layui-col-space15">
+<div class="layui-col-sm8 layui-col-sm-offset2 layui-col-md6  layui-col-md-offset3 layui-col-lg6 layui-col-xs12  layui-col-lg-offset3">
+<div class="layui-card">
+<center>
+<div class="layui-card-header" style="font-size: 2.5em;text-align: left; color:orange">偏爱查询</div>
+<div class="layui-card-body">
+<img src="assets/img/logo.gif" alt="Avatar" width="80" height="80" style="border:1px solid #FFF;-moz-box-shadow:0 0 3px #AAA;-webkit-box-shadow:0 0 3px #AAA;border-radius: 50%;box-shadow:0 0 3px #AAA;padding:3px;margin-right: 3px;margin-left: 6px;"></p><br/>
+<h1>一个信息泄漏查询的网站</h1><br/>
+<div class="layui-form layui-form-pane">
+<div class="layui-form-item">
+
+<label class="layui-form-label">Q查手机</label> 
+<div class="layui-input-block">
+<input type="text" class="layui-input" id="id1" name="user" placeholder="输入Q号">
+</div> 
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">手机查Q</label> 
+<div class="layui-input-block">
+<input type="text" class="layui-input" id="id2" name="pass" placeholder="输入手机号">
+</div> 
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">微博查手机</label> 
+<div class="layui-input-block">
+<input type="text" class="layui-input" id="id3" name="step" placeholder="输入微博ID">
+</div> 
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">手机查微博</label> 
+<div class="layui-input-block">
+<input type="text" class="layui-input" id="id4" name="pass" placeholder="输入手机号">
+</div> 
+</div>
+<button  id="query" onclick="select()" class="layui-btn layui-btn layui-btn-lg layui-btn-normal layui-btn-fluid" type="submit" lay-filter="formDemo">查询</button><br><br>
+<button  class="layui-btn layui-btn layui-btn-lg layui-btn-warm layui-btn-fluid" onclick="copy()" >复制</button><br><br>
+</div>
+</div>
+</div>
+</center>
+<div class="layui-card">
+<center>
+<div class="layui-card-header" style="font-size: 1.5em;text-align: center;">使用说明</div>
+<div class="layui-card-body">
+<div class="well" style="text-align: left;">
+1.查找数据来自互联网API接口，具有时效性，可能随时跑路失效！</p>
+2.仅供查询个人信息是否泄漏，请勿用于违法行为！</p>
+3.本网站支持多个查询，即一次可以查询多项，查询结果会在原来文本框展示！</p>
+4.点击复制即可把所有查询结果复制到剪切板！</p>
+5.<a href="https://jingyan.baidu.com/article/1709ad806534820735c4f02f.html" target="_blank">点击俺即可跳转至微博ID查询方法！</a></
+6.<a href="https://www.paijishu.com" target="_blank">偏爱</a>
+</p></div>
+<hr>
+<footer class="col-sm-12 text-center">
+<p class="m-b-0">©2022 <a href="">偏爱技术</a></p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script  type="text/javascript">
+		 window.onbeforeunload = function (e){
+			 console.log("禁止点击复制按钮后刷新页面");
+			 return '';
+		 }
+</script>
+
+</body>
+</html>
